@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.288e733b.chunk.css",
-    "main.js": "/static/js/main.51224dac.chunk.js",
-    "main.js.map": "/static/js/main.51224dac.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.12d292a6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.12d292a6.js.map",
-    "static/css/2.d9ad5f5c.chunk.css": "/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.acd08b28.chunk.js": "/static/js/2.acd08b28.chunk.js",
-    "static/js/2.acd08b28.chunk.js.map": "/static/js/2.acd08b28.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.ec1cf6ba1b717406a7309d78614257a4.js": "/precache-manifest.ec1cf6ba1b717406a7309d78614257a4.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.d9ad5f5c.chunk.css.map": "/static/css/2.d9ad5f5c.chunk.css.map",
-    "static/css/main.288e733b.chunk.css.map": "/static/css/main.288e733b.chunk.css.map",
-    "static/js/2.acd08b28.chunk.js.LICENSE.txt": "/static/js/2.acd08b28.chunk.js.LICENSE.txt",
-    "static/media/loading-content.gif": "/static/media/loading-content.3775a0f3.gif",
-    "static/media/map.png": "/static/media/map.650a2a15.png",
-    "static/media/profile.jpg": "/static/media/profile.782adc2b.jpg"
+    "main.css": "/dominus-freight-app/static/css/main.288e733b.chunk.css",
+    "main.js": "/dominus-freight-app/static/js/main.e8fca88b.chunk.js",
+    "main.js.map": "/dominus-freight-app/static/js/main.e8fca88b.chunk.js.map",
+    "runtime-main.js": "/dominus-freight-app/static/js/runtime-main.437c55bd.js",
+    "runtime-main.js.map": "/dominus-freight-app/static/js/runtime-main.437c55bd.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/dominus-freight-app/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.50a82816.chunk.js": "/dominus-freight-app/static/js/2.50a82816.chunk.js",
+    "static/js/2.50a82816.chunk.js.map": "/dominus-freight-app/static/js/2.50a82816.chunk.js.map",
+    "index.html": "/dominus-freight-app/index.html",
+    "precache-manifest.4ffa0b41ec96034def3655cb9f01da2a.js": "/dominus-freight-app/precache-manifest.4ffa0b41ec96034def3655cb9f01da2a.js",
+    "service-worker.js": "/dominus-freight-app/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/dominus-freight-app/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.288e733b.chunk.css.map": "/dominus-freight-app/static/css/main.288e733b.chunk.css.map",
+    "static/js/2.50a82816.chunk.js.LICENSE.txt": "/dominus-freight-app/static/js/2.50a82816.chunk.js.LICENSE.txt",
+    "static/media/loading-content.gif": "/dominus-freight-app/static/media/loading-content.3775a0f3.gif",
+    "static/media/map.png": "/dominus-freight-app/static/media/map.650a2a15.png",
+    "static/media/profile.jpg": "/dominus-freight-app/static/media/profile.782adc2b.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.12d292a6.js",
+    "static/js/runtime-main.437c55bd.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.acd08b28.chunk.js",
+    "static/js/2.50a82816.chunk.js",
     "static/css/main.288e733b.chunk.css",
-    "static/js/main.51224dac.chunk.js"
+    "static/js/main.e8fca88b.chunk.js"
   ]
 }
