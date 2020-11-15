@@ -32,13 +32,13 @@ function App() {
           <div>
             <Switch>
               <Route exact path='/' component={Login}></Route>
-              <Route exact path='/login' component={Login}></Route>signup
+              <Route exact path='/login' component={Login}></Route>
               {/* <Route exact path='/signup' component={Signup}></Route> */}
               <Route exact path='/loadconfirmation' component={LoadConfirmation}></Route>
               <Route exact path='/realtime' component={RealTime}></Route>
               <Route exact path='/yourloads' component={YourLoads}></Route> 
               <Route exact path='/loaddetails' component={LoadDetails}></Route> 
-              <Route exact path='/shipper' component={Shipper}></Route>AllPayment
+              <Route exact path='/shipper' component={Shipper}></Route>
               <Route exact path='/allpayment' component={AllPayment}></Route>
               <Route exact path='/setting' component={Setting}></Route>
             </Switch>
