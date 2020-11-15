@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "67ec12f053dd68e8f9c125c8be338353",
+    "revision": "c233955859632c0df53bb388bf578558",
     "url": "/dominus-freight-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dominus-freight-app/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "7a1c1c0f590d45a9fb69",
+    "revision": "6d1447796f9051c9372f",
     "url": "/dominus-freight-app/static/css/main.288e733b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dominus-freight-app/static/js/2.50a82816.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7a1c1c0f590d45a9fb69",
-    "url": "/dominus-freight-app/static/js/main.e8db0c6c.chunk.js"
+    "revision": "6d1447796f9051c9372f",
+    "url": "/dominus-freight-app/static/js/main.d167dfb1.chunk.js"
   },
   {
     "revision": "f2508a1f7877472999d3",
