@@ -24,7 +24,7 @@ function App() {
   const [customer, setCustomer] = useState(JSON.parse(localStorage.getItem('customer')));
 
   return (
-    <Router basename="dominus-freight-app/">
+    <Router>
       <div className="App">
         <Header user={user} customer={customer} />
           
