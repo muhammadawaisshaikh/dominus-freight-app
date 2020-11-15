@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dominus-freight-app/static/css/main.288e733b.chunk.css",
-    "main.js": "/dominus-freight-app/static/js/main.e8fca88b.chunk.js",
-    "main.js.map": "/dominus-freight-app/static/js/main.e8fca88b.chunk.js.map",
+    "main.js": "/dominus-freight-app/static/js/main.f25ccd61.chunk.js",
+    "main.js.map": "/dominus-freight-app/static/js/main.f25ccd61.chunk.js.map",
     "runtime-main.js": "/dominus-freight-app/static/js/runtime-main.437c55bd.js",
     "runtime-main.js.map": "/dominus-freight-app/static/js/runtime-main.437c55bd.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/dominus-freight-app/static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.50a82816.chunk.js": "/dominus-freight-app/static/js/2.50a82816.chunk.js",
     "static/js/2.50a82816.chunk.js.map": "/dominus-freight-app/static/js/2.50a82816.chunk.js.map",
     "index.html": "/dominus-freight-app/index.html",
-    "precache-manifest.4ffa0b41ec96034def3655cb9f01da2a.js": "/dominus-freight-app/precache-manifest.4ffa0b41ec96034def3655cb9f01da2a.js",
+    "precache-manifest.e62ac2915f79a76ef299f09d73769844.js": "/dominus-freight-app/precache-manifest.e62ac2915f79a76ef299f09d73769844.js",
     "service-worker.js": "/dominus-freight-app/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/dominus-freight-app/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.288e733b.chunk.css.map": "/dominus-freight-app/static/css/main.288e733b.chunk.css.map",
@@ -23,6 +23,6 @@
     "static/css/2.d9ad5f5c.chunk.css",
     "static/js/2.50a82816.chunk.js",
     "static/css/main.288e733b.chunk.css",
-    "static/js/main.e8fca88b.chunk.js"
+    "static/js/main.f25ccd61.chunk.js"
   ]
 }
