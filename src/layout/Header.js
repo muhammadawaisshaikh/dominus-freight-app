@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
 import '../assets/css/header.css'
-import Login from '../components/Login';
-// import logo from '../assets/img/logo_465x320.png'
+import { useHistory } from "react-router-dom";
 
 function Header(props) {
+
+    let history = useHistory();
 
     const [menuToggle, setMenuToggle] = useState(false);
     const [headerTitle, setHeaderTitle] = useState('');
@@ -12,7 +13,8 @@ function Header(props) {
 
     const logout = () => {
         localStorage.clear('user');
-        window.location.href = '/login';
+        // window.location.href = '/login';
+        history.push("/login");
     }
 
     return(

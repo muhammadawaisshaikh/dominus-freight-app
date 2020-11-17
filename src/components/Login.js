@@ -51,7 +51,7 @@ class Login extends React.Component {
 
                     let customer = tempCustomers.filter(item => item.company_email == res.user.email);
                     localStorage.setItem('customer', JSON.stringify(customer[0]));
-                    window.location.href = '/yourloads';
+                    this.props.history.push('/yourloads')
                     this.setState({ loading: false });
                 });
             }
