@@ -13,7 +13,7 @@ import AllPayment from './components/AllPayment';
 import Setting from './components/Setting';
 
 import { 
-  BrowserRouter as Router, 
+  HashRouter as Router, 
   Redirect,
   Route,
   Switch   
@@ -32,10 +32,6 @@ function App() {
           {/* all components */} 
           <div>
             <Switch>
-              <Route exact path="/dominus-freight-app">
-                  <Redirect to="/login" />
-              </Route>
-
               <Route exact path="/">
                   <Redirect to="/login" />
               </Route>
