@@ -31,7 +31,7 @@ function App() {
           {/* all components */} 
           <div>
             <Switch>
-              <Route exact path='/' component={Login}></Route>
+              <Route exact path="/" render={() => (<Redirect to="/login" />)} /> 
               <Route exact path='/login' component={Login}></Route>
               {/* <Route exact path='/signup' component={Signup}></Route> */}
               <Route exact path='/loadconfirmation' component={LoadConfirmation}></Route>
