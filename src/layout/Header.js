@@ -26,7 +26,7 @@ function Header(props) {
                 </div>
 
                 <div onClick={() => logout()} className={!userData.user ? 'display-none' : 'logout-b'}>
-                    <i class="fas fa-power-off"></i>
+                    <i className="fas fa-power-off"></i>
                 </div>
 
                 <h4 className="header-title">{headerTitle}</h4>
@@ -69,37 +69,10 @@ function Header(props) {
                             Login
                         </Link>
     
-                        {/* <Link to="/signup" 
-                            onClick={() => { setMenuToggle(!menuToggle); setHeaderTitle('Sign Up')}}>
-                            Sign Up
-                        </Link> */}
-    
-                        {/* <Link to="/loadconfirmation" 
-                            className={userData.customer.account_type == 'driver' ? '' : 'display-none'}
-                            onClick={() => { setMenuToggle(!menuToggle); setHeaderTitle('Load Confirmation')}}>
-                            Load Confirmation
-                        </Link>
-                        
-                        <Link to="/realtime" 
-                            className={userData.customer.account_type == 'driver' ? '' : 'display-none'}
-                            onClick={() => { setMenuToggle(!menuToggle); setHeaderTitle('Real Time Tracking')}}>
-                            Real Time Tracking
-                        </Link> */}
-    
                         <Link to="/yourloads"
                             onClick={() => { setMenuToggle(!menuToggle); setHeaderTitle('Your Loads')}}>
                             Your Loads
                         </Link>
-    
-                        {/* <Link to="/loaddetails" 
-                            onClick={() => { setMenuToggle(!menuToggle); setHeaderTitle('Load Details')}}>
-                            Load Details
-                        </Link>  */}
-    
-                        {/* <Link to="/shipper" 
-                            onClick={() => { setMenuToggle(!menuToggle); setHeaderTitle('Shipper')}}>
-                            Shipper 
-                        </Link> */}
     
                         <Link to="/allpayment" 
                             className={userData.customer.account_type == 'shipper' ? '' : 'display-none'}
@@ -113,7 +86,12 @@ function Header(props) {
                         </Link>
                     </div>
                     :
-                    null
+                    <div className={"mobile-menu sidenav " + (menuToggle ? 'open' : 'close')}>
+                        <Link to="/login"
+                            onClick={() => { setMenuToggle(!menuToggle); setHeaderTitle('Login')} }>
+                            Login
+                        </Link>
+                    </div>
                 }
 
             </div>
