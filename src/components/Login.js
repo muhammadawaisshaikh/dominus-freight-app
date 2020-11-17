@@ -2,6 +2,7 @@ import React from 'react';
 import '../assets/css/login.css';
 import { Link } from 'react-router-dom';
 import firebase from '../core/firebase/firebase';
+import { withRouter } from "react-router";
 
 class Login extends React.Component {
 
@@ -114,4 +115,4 @@ class Login extends React.Component {
         );
     }
 }
-export default Login;
+export default withRouter(Login);
