@@ -24,7 +24,8 @@ class Login extends React.Component {
 
     checkUserLogin = () => {
         let userData = JSON.parse(localStorage.getItem('user'));
-        if(userData) this.props.history.push('/yourloads')
+        // if(userData) this.props.history.push('/yourloads');
+        if(userData) this.props.history.push('https://muhammadawaisshaikh.github.io/dominus-freight-app/');
     }
 
     handleChange = (event) => {
