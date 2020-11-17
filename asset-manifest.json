@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/dominus-freight-app/static/css/main.288e733b.chunk.css",
-    "main.js": "/dominus-freight-app/static/js/main.2d5c01a7.chunk.js",
-    "main.js.map": "/dominus-freight-app/static/js/main.2d5c01a7.chunk.js.map",
+    "main.js": "/dominus-freight-app/static/js/main.455c2084.chunk.js",
+    "main.js.map": "/dominus-freight-app/static/js/main.455c2084.chunk.js.map",
     "runtime-main.js": "/dominus-freight-app/static/js/runtime-main.437c55bd.js",
     "runtime-main.js.map": "/dominus-freight-app/static/js/runtime-main.437c55bd.js.map",
     "static/css/2.d9ad5f5c.chunk.css": "/dominus-freight-app/static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.50a82816.chunk.js": "/dominus-freight-app/static/js/2.50a82816.chunk.js",
-    "static/js/2.50a82816.chunk.js.map": "/dominus-freight-app/static/js/2.50a82816.chunk.js.map",
+    "static/js/2.9a13f6ff.chunk.js": "/dominus-freight-app/static/js/2.9a13f6ff.chunk.js",
+    "static/js/2.9a13f6ff.chunk.js.map": "/dominus-freight-app/static/js/2.9a13f6ff.chunk.js.map",
     "index.html": "/dominus-freight-app/index.html",
-    "precache-manifest.87d38ee12e43350c2786e7829b01eeaa.js": "/dominus-freight-app/precache-manifest.87d38ee12e43350c2786e7829b01eeaa.js",
+    "precache-manifest.b19d46dcd20a7b16bae3b8884deab917.js": "/dominus-freight-app/precache-manifest.b19d46dcd20a7b16bae3b8884deab917.js",
     "service-worker.js": "/dominus-freight-app/service-worker.js",
     "static/css/2.d9ad5f5c.chunk.css.map": "/dominus-freight-app/static/css/2.d9ad5f5c.chunk.css.map",
     "static/css/main.288e733b.chunk.css.map": "/dominus-freight-app/static/css/main.288e733b.chunk.css.map",
-    "static/js/2.50a82816.chunk.js.LICENSE.txt": "/dominus-freight-app/static/js/2.50a82816.chunk.js.LICENSE.txt",
+    "static/js/2.9a13f6ff.chunk.js.LICENSE.txt": "/dominus-freight-app/static/js/2.9a13f6ff.chunk.js.LICENSE.txt",
     "static/media/loading-content.gif": "/dominus-freight-app/static/media/loading-content.3775a0f3.gif",
     "static/media/map.png": "/dominus-freight-app/static/media/map.650a2a15.png",
     "static/media/profile.jpg": "/dominus-freight-app/static/media/profile.782adc2b.jpg"
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.437c55bd.js",
     "static/css/2.d9ad5f5c.chunk.css",
-    "static/js/2.50a82816.chunk.js",
+    "static/js/2.9a13f6ff.chunk.js",
     "static/css/main.288e733b.chunk.css",
-    "static/js/main.2d5c01a7.chunk.js"
+    "static/js/main.455c2084.chunk.js"
   ]
 }
