@@ -12,8 +12,7 @@ function Header(props) {
 
     const logout = () => {
         localStorage.clear('user');
-        // window.location.href = '/login';
-        window.location.href = 'https://muhammadawaisshaikh.github.io/dominus-freight-app/';
+        window.location.href = '/login';
     }
 
     return(
