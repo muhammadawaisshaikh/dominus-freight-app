@@ -32,9 +32,14 @@ function App() {
           {/* all components */} 
           <div>
             <Switch>
-            <Route exact path="/">
-                <Redirect to="/login" />
-            </Route>
+              <Route exact path="/dominus-freight-app">
+                  <Redirect to="/login" />
+              </Route>
+
+              <Route exact path="/">
+                  <Redirect to="/login" />
+              </Route>
+
               <Route path='/login' component={Login}></Route>
               {/* <Route path='/signup' component={Signup}></Route> */}
               <Route path='/loadconfirmation' component={LoadConfirmation}></Route>
