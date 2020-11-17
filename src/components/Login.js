@@ -51,7 +51,8 @@ class Login extends React.Component {
 
                     let customer = tempCustomers.filter(item => item.company_email == res.user.email);
                     localStorage.setItem('customer', JSON.stringify(customer[0]));
-                    window.location.href = '/yourloads';
+                    // window.location.href = '/yourloads';
+                    window.location.href = 'https://muhammadawaisshaikh.github.io/dominus-freight-app/';
                     this.setState({ loading: false });
                 });
             }
@@ -72,21 +73,21 @@ class Login extends React.Component {
                             <div className="col-md-4">
                                 <div className="card-body">
                                     <form>
-                                        <div class="form-group">
+                                        <div className="form-group">
                                             <label>Email address</label>
-                                            <input type="email" class="form-control" placeholder="Enter email" name="email" value={this.state.email} onChange={(event) => this.handleChange(event)}/>
-                                            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                            <input type="email" className="form-control" placeholder="Enter email" name="email" value={this.state.email} onChange={(event) => this.handleChange(event)}/>
+                                            <small className="form-text text-muted">We'll never share your email with anyone else.</small>
                                         </div>
-                                        <div class="form-group">
+                                        <div className="form-group">
                                             <label>Password</label>
                                             <input type="password" name="password" className="form-control" value={this.state.password} onChange={(event) => this.handleChange(event)} placeholder="Password" />
                                         </div>
                                         
                                         <div className="row">
                                             <div className="col-6 col-md-6">
-                                                <div class="form-check pb-2">
-                                                    <input type="checkbox" class="form-check-input" />
-                                                    <label class="form-check-label"><small>Remember Me</small></label>
+                                                <div className="form-check pb-2">
+                                                    <input type="checkbox" className="form-check-input" />
+                                                    <label className="form-check-label"><small>Remember Me</small></label>
                                                 </div>
                                             </div>
                                             <div className="col-6 col-md-6">
