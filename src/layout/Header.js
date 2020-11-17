@@ -9,7 +9,7 @@ function Header(props) {
 
     const [menuToggle, setMenuToggle] = useState(false);
     const [headerTitle, setHeaderTitle] = useState('');
-    const [userData, setUserData] = useState(props);
+    const [userData, setUserData] = useState(JSON.parse(localStorage.getItem('user')));
 
     const logout = () => {
         localStorage.clear('user');
