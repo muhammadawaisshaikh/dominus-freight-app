@@ -12,7 +12,8 @@ function Header(props) {
 
     const logout = () => {
         localStorage.clear('user');
-        window.location.href = '/login';
+        // window.location.href = '/login';
+        props.history.push('#/login');
     }
 
     return(
@@ -63,31 +64,31 @@ function Header(props) {
                 {
                      userData.user && userData.customer ?
                      <div className={"mobile-menu sidenav " + (menuToggle ? 'open' : 'close')}>
-                        <Link to="/login" 
+                        <Link to="#/login" 
                             className={userData.user ? 'display-none' : ''}
                             onClick={() => { setMenuToggle(!menuToggle); setHeaderTitle('Login')} }>
                             Login
                         </Link>
     
-                        <Link to="/yourloads"
+                        <Link to="#/yourloads"
                             onClick={() => { setMenuToggle(!menuToggle); setHeaderTitle('Your Loads')}}>
                             Your Loads
                         </Link>
     
-                        <Link to="/allpayment" 
+                        <Link to="#/allpayment" 
                             className={userData.customer.account_type == 'shipper' ? '' : 'display-none'}
                             onClick={() => { setMenuToggle(!menuToggle); setHeaderTitle('All Payment')}}> 
                             All Payment 
                         </Link>
     
-                        <Link to="/setting"
+                        <Link to="#/setting"
                             onClick={() => { setMenuToggle(!menuToggle); setHeaderTitle('Setting')}}> 
                             Setting 
                         </Link>
                     </div>
                     :
                     <div className={"mobile-menu sidenav " + (menuToggle ? 'open' : 'close')}>
-                        <Link to="/login"
+                        <Link to="#/login"
                             onClick={() => { setMenuToggle(!menuToggle); setHeaderTitle('Login')} }>
                             Login
                         </Link>

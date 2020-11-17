@@ -31,17 +31,17 @@ function App() {
           
           {/* all components */} 
           <div>
-            <Route exact path="/" component={Login} /> 
+            <Route exact path="#/" component={Login} /> 
             <Switch>
-              <Route path='/login' component={Login}></Route>
+              <Route path='#/login' component={Login}></Route>
               {/* <Route path='/signup' component={Signup}></Route> */}
-              <Route path='/loadconfirmation' component={LoadConfirmation}></Route>
-              <Route path='/realtime' component={RealTime}></Route>
-              <Route path='/yourloads' component={YourLoads}></Route> 
-              <Route path='/loaddetails' component={LoadDetails}></Route> 
-              <Route path='/shipper' component={Shipper}></Route>
-              <Route path='/allpayment' component={AllPayment}></Route>
-              <Route path='/setting' component={Setting}></Route>
+              <Route path='#/loadconfirmation' component={LoadConfirmation}></Route>
+              <Route path='#/realtime' component={RealTime}></Route>
+              <Route path='#/yourloads' component={YourLoads}></Route> 
+              <Route path='#/loaddetails' component={LoadDetails}></Route> 
+              <Route path='#/shipper' component={Shipper}></Route>
+              <Route path='#/allpayment' component={AllPayment}></Route>
+              <Route path='#/setting' component={Setting}></Route>
             </Switch>
           </div>
 
