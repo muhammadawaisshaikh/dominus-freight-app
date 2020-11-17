@@ -14,6 +14,7 @@ import Setting from './components/Setting';
 
 import { 
   BrowserRouter as Router, 
+  Redirect,
   Route,
   Switch   
 } from 'react-router-dom';
