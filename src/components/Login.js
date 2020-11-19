@@ -61,7 +61,8 @@ class Login extends React.Component {
             }
         })
         .catch(error => {
-            console.log(error);
+            alert(error);
+            this.setState({ loading: false });
         })
     }
 
@@ -83,7 +84,15 @@ class Login extends React.Component {
                                         </div>
                                         <div class="form-group">
                                             <label>Password</label>
-                                            <input type="password" name="password" className="form-control" value={this.state.password} onChange={(event) => this.handleChange(event)} placeholder="Password" />
+                                            <input type="password" name="password" className="form-control" 
+                                                value={this.state.password} 
+                                                onChange={(event) => this.handleChange(event)} placeholder="Password"
+                                                onKeyPress={event => {
+                                                    if (event.key === 'Enter') {
+                                                      this.login()
+                                                    }
+                                                }}
+                                            />
                                         </div>
                                         
                                         <div className="row">

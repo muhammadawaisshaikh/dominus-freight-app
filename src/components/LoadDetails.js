@@ -12,7 +12,7 @@ class LoadDetails extends React.Component {
         super(props);
 
         this.state = {
-            data: props.location.state,
+            data: '',
             loading: false,
             userDetails: JSON.parse(localStorage.getItem('user')),
             customerDetails: JSON.parse(localStorage.getItem('customer')),
@@ -20,7 +20,6 @@ class LoadDetails extends React.Component {
     } 
 
     componentDidMount() {
-        console.log("LoadDetails", this.state.data);
         this.getDetails();    
     }
 

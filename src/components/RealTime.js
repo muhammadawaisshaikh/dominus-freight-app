@@ -3,24 +3,32 @@ import firebase from '../core/firebase/firebase';
 import '../assets/css/realtime.css';
 import { Link } from 'react-router-dom';
 
+import DataHolding from '../core/services/data-holding-service';
+
 class RealTime extends React.Component {
 
     constructor(props) {
         super(props);
 
         this.state = {
-            data: props.location.state,
+            data: '',
             update: 'No Update',
             loading: false
         };
     } 
 
     componentDidMount() {
-        console.log("RealTime", this.state.data);
+        this.getDetails();    
+    }
 
-        this.setState({
-            loading: true
-        });
+    async getDetails() {
+        var details = DataHolding.setData();
+        await console.log(details);
+        this.setState({ data: details });
+
+        if (!this.state.data.id) {
+            this.props.history.push('/yourloads');
+        }
     }
 
     sendUpdate = (e) => {
@@ -32,7 +40,7 @@ class RealTime extends React.Component {
   
         const updateData = {
             update: this.state.update,
-            driver: this.state.data.data.driver
+            driver: this.state.data.driver
         };
         
         // storing update as a new record
@@ -87,7 +95,7 @@ class RealTime extends React.Component {
                                 <div className="card-body">
 
                                     {
-                                        this.state.data.data.status == "Load Created" || this.state.data.data.status == "pickup" ?
+                                        this.state.data.status == "Load Created" || this.state.data.status == "pickup" ?
                                         <div>
                                             <h2>Send Update</h2>
                                             <div className="form-group">
@@ -109,21 +117,21 @@ class RealTime extends React.Component {
                                     }
 
                                     {
-                                        this.state.data.data.status == "Load Created" ?
-                                            <a className="btn btn-primary w-100 mt-4 font-weight-bold" onClick={() => { this.pickupLoad(this.state.data.data.id) }}>Pickup</a>
+                                        this.state.data.status == "Load Created" ?
+                                            <a className="btn btn-primary w-100 mt-4 font-weight-bold" onClick={() => { this.pickupLoad(this.state.data.id) }}>Pickup</a>
                                         :
                                         null
                                     }
 
                                     {
-                                        this.state.data.data.status == "pickup" ?
-                                            <a className="btn btn-success w-100 mt-4 font-weight-bold" onClick={() => { this.deliverLoad(this.state.data.data.id) }}>Delivered</a>
+                                        this.state.data.status == "pickup" ?
+                                            <a className="btn btn-success w-100 mt-4 font-weight-bold" onClick={() => { this.deliverLoad(this.state.data.id) }}>Delivered</a>
                                         :
                                         null
                                     }
 
                                     {
-                                        this.state.data.data.status == "delivered" ?
+                                        this.state.data.status == "delivered" ?
                                             <a className="btn btn-warning w-100 mt-4 font-weight-bold">Give Rating</a>
                                         :
                                         null
