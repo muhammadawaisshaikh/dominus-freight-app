@@ -50,8 +50,8 @@ class Login extends React.Component {
                     let customer = tempCustomers.filter(item => item.company_email == res.user.email);
                     localStorage.setItem('customer', JSON.stringify(customer[0]));
 
-                    this.props.history.push('/yourloads');
-                    // window.location.href = "https://muhammadawaisshaikh.github.io/dominus-freight-app";
+                    // this.props.history.push('/yourloads');
+                    window.location.href = "https://muhammadawaisshaikh.github.io/dominus-freight-app";
 
                     this.setState({ loading: false });
                 });
