@@ -18,8 +18,6 @@ class Login extends React.Component {
     } 
 
     componentDidMount() {
-        console.log("Login");
-
         this.checkUserLogin();
     }
 
@@ -30,7 +28,6 @@ class Login extends React.Component {
 
     handleChange = (event) => {
         this.setState({ [event.target.name]: event.target.value });
-        console.log(this.state);
     }
 
     login = async() => {
