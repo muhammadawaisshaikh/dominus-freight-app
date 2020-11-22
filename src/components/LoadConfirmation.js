@@ -56,6 +56,7 @@ class LoadConfirmation extends React.Component {
                             this.state.data != '' ?
                             <div className="row justify-content-center">
                                 <div className="col-md-4">
+                                    <Link to="/yourloads" className="d-block text-left pb-3 text-dark"><i class="fas fa-chevron-left"></i> Back to your Loads</Link>
                                     <ul class="list-group">
                                         <li class="list-group-item">
                                             <h3>Carrier Company</h3>

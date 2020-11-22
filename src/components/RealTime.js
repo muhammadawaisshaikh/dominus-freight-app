@@ -97,6 +97,7 @@ class RealTime extends React.Component {
                                     {
                                         this.state.data.status == "Load Created" || this.state.data.status == "pickup" ?
                                         <div>
+                                            <Link to="/yourloads" className="d-block text-left pb-3 text-dark"><i class="fas fa-chevron-left"></i> Back to your Loads</Link>
                                             <h2>Send Update</h2>
                                             <div className="form-group">
                                                 <select className="form-control" onChange={(e) => { this.sendUpdate(e) }}>
@@ -136,8 +137,6 @@ class RealTime extends React.Component {
                                         :
                                         null
                                     }
-
-                                    <Link to="/yourloads" className="d-block text-center pt-3"><i class="fas fa-chevron-left"></i> Back to your Loads</Link>
                                 </div>
                             </div>
                         </div>
