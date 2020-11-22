@@ -11,8 +11,10 @@ class YourLoads extends React.Component {
 
         this.state = {
             loads: [],
+            itemsToUse: [],
             loading: false,
-            customerData: JSON.parse(localStorage.getItem('customer'))
+            customerData: JSON.parse(localStorage.getItem('customer')),
+            typeFilter: 'all'
         };
     } 
 
@@ -36,24 +38,33 @@ class YourLoads extends React.Component {
 
             //   this.setState({ loads: tempLloads });
 
-            tempLloads.map((item, i) => {
-                if (this.state.customerData.account_type == 'driver') {
-                    account = JSON.parse(item.driver).company_email;
-                }
-                if (this.state.customerData.account_type == 'shipper') {
-                    account = JSON.parse(item.shipper).company_email;
-                }
-                if (this.state.customerData.account_type == 'carrier') {
-                    account = JSON.parse(item.carrier).company_email;
-                }
+            if (this.state.customerData.account_type == 'admin') {
+                this.setState({ loads: tempLloads });
+                this.setState({ itemsToUse: tempLloads });
+            }
+            else {
+                tempLloads.map((item, i) => {
+                    if (this.state.customerData.account_type == 'driver') {
+                        account = JSON.parse(item.driver).company_email;
+                    }
+                    if (this.state.customerData.account_type == 'shipper') {
+                        account = JSON.parse(item.shipper).company_email;
+                    }
+                    if (this.state.customerData.account_type == 'carrier') {
+                        account = JSON.parse(item.carrier).company_email;
+                    }
+            
+                    if (account == this.state.customerData.company_email) {
+                        filteredLoads.push(item);
+                        console.log(item);
+                    }
+                })
+                
+                this.setState({ loads: filteredLoads });
+                this.setState({ itemsToUse: filteredLoads });
 
-                if (account == this.state.customerData.company_email) {
-                    filteredLoads.push(item);
-                    console.log(item);
-                }
-            })
-
-            this.setState({ loads: filteredLoads, loading: true });
+                this.setState({ loading: true });
+            }
         });
     };
 
@@ -78,6 +89,29 @@ class YourLoads extends React.Component {
         }
     }
 
+    filterByType = (value) => {
+        let filtered = [];
+    
+        this.setState({ typeFilter: value });
+        console.log(this.state.typeFilter);
+    
+        if (value == '' || value == 'all') {
+          this.setState({ itemsToUse: this.state.loads });
+        }
+        if (value == 'past') {
+          filtered = this.state.loads.filter(item => item.load_type == 'past');
+          this.setState({ itemsToUse: filtered });
+        }
+        if (value == 'active') {
+          filtered = this.state.loads.filter(item => item.load_type == 'active');
+          this.setState({ itemsToUse: filtered });
+        }
+        if (value == 'upcoming') {
+            filtered = this.state.loads.filter(item => item.load_type == 'upcoming');
+            this.setState({ itemsToUse: filtered });
+          }
+      }
+
     render() {
         return(
             // trucking company
@@ -99,18 +133,20 @@ class YourLoads extends React.Component {
                                     </div>
 
                                     <div className="form-group mt-5">
-                                        <select className="form-control">
-                                            <option>Active</option>
-                                            <option>Upcoming</option>
-                                            <option>Past</option>
+                                        <select className="form-control" onChange={(e) => { this.filterByType(e.target.value) }}>
+                                            <option>Select Load Status Type</option>
+                                            <option value="all">All</option>
+                                            <option value="active">Active</option>
+                                            <option value="upcoming">Upcoming</option>
+                                            <option value="past">Past</option>
                                         </select>
                                     </div>
 
                                     {
-                                        this.state.loading && this.state.loads.length > 0 ?
+                                        this.state.loading && this.state.itemsToUse.length > 0 ?
                                         <ul className="list-group">
                                             {
-                                                this.state.loads.map((item, key) => {
+                                                this.state.itemsToUse.map((item, key) => {
                                                     return (
                                                         <li className="list-group-item" key={key} onClick={() => this.setData(item)}>
                                                             <h6>Load ID: {item.id}</h6>
